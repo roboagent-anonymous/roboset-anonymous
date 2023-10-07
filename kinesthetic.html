@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboSet: Kinesthetic dataset</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="styesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="content is-centered is-vcentered">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-body has-text-centered">
+                    <h2>
+                        <Strong>RoboSet</Strong>: Kinesthetic Dataset
+                    </h2>
+                    <p>
+                        Dataset coming soon! Please stay tuned!
+                    </p>
+                    <div class="columns is-centered is-vcentered">
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="https://roboagent-anonymous.github.io/roboset"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Home</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://roboagent-anonymous.github.io/roboset/teleoperation.html"
+                                        class="external-link button is-normal is-rounded is-dark" `>
+                                        <span>Teleoperation</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://roboagent-anonymous.github.io/roboset/autonomous.html"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Autonomous</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content is-centered is-vcentered">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-body has-text-centered">
+                    <h2 id="data">
+                        Data
+                    </h2>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by task name"
+                        title="Type task names">
+                    <table class="table is-hoverable" id="myTable">
+                        <thead style="background-color:#ddd">
+                            <th>Task</th>
+                            <th>Number of demonstrations</th>
+                            <th>Example</th>
+                            <th>Download</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Pick Banana and place it in mug</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_banana_place_in_mug_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a
+                                        href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/Pick_banana_place_in_mug.tar.gz">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong> Pick Banana and place it in strainer</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/banana_in_strainer_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a
+                                        href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/Pick_banana_place_in_strainer.tar.gz">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick banana from plate and place on table</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/banana_pick_place_off_plate_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick banana from toaster and place on table<strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/banana_pick_place_off_toaster_data.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick banana from table and place on plate</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/banana_pick_place_on_plate_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick banana from table and place on toaster </strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_banana_place_on_toaster_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong> Pick Ketchup from the table and place it in strainer</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_ketchup_place_in_strainer_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick Ketchup from the table and place in toaster</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/ketchup_in_toaster_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick ketchup from strainer and place it on the table</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_ketchup_from_strainer_place_on_table_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick ketchup from plate and place it on table</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_ketchup_from_plate_place_on_table_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick Ketchup from toaster and place it on table</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_ketchup_from_toaster_place_on_table_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick ketchup from table and place on plate</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/ketchup_pick_place_on_plate_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Pick ketchup from table and place on toaster</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/pick_ketchup_place_on_toaster_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag mug backwards</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/mug_drag_backward_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag mug forwards</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/mug_drag_forward_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag mug left to right</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/mug_drag_left_right_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag mug right to left</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/mug_drag_right_left_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag strainer backwards</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/strainer_drag_backward_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag strainer forwards</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/strainer_drag_forward_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag strainer left to right</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/drag_strainer_left_to_right_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Drag strainer right to left</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/drag_strainer_right_to_left_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Flap open toaster</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/flap_open_toaster_oven_data.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Flap close toaster</strong>
+                                </td>
+                                <td>
+                                    500 Demonstrations
+                                </td>
+                                <td>
+                                    <video poster="" autoplay muted loop playsinline height="100%">
+                                        <source src="media/v0.2/" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td>
+                                    <a href="https://dl.fbaipublicfiles.com/RoboSet/KinestheticSet/Activities/">Download
+                                        now</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8 has-text-centered">
+                    <div class="content">
+                        This work is licensed under the <a href="https://mit-license.org/" target="_blank"
+                            rel="license">MIT-License</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+    burgerIcon.addEventListener('click', () => {
+        navbarMenu.classList.toggle('is-active');
+    });
+</script>
+
+</html>
